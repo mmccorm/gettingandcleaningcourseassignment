@@ -1,0 +1,122 @@
+CODE BOOK FOR COURSE PROJECT
+GETTING AND CLEANING DATA
+OUTPUT FILE that this decribes: course_project_for_getting_cleaning.txt
+File is based on data frame summary_with_averages, in analysis script run_analysis.R
+
+
+subject
+
+	Numerical code for the individual test subject that is being measured.
+	INTEGER from 1 -30.
+
+
+activity
+
+	Decription of the activity the subject was involved in during the measurement.
+	FACTOR with 6 levels:
+		laying : Subject is laying.
+		sitting: Subject is sitting.
+		standing: Subject is standing.
+		walking: Subject is walking, but is not climbing up nor down stairs.
+		walkingdownstairs: Subject is walking down stairs.
+		walkingupstairs: Subject is walking up stairs.
+
+
+variable
+
+	The specific primary measurement or derived quantity being reported on, in this case by reporting its average for each combination of subject and activity.
+
+
+	FACTOR  with 79 levels:
+		timebodyaccelerometermeanx: Time domain body acceleration with gravity acceleration removed, mean in x-axis.
+		timebodyaccelerometermeany: Time domain body acceleration with gravity acceleration removed, mean in y-axis.
+		timebodyaccelerometermeanz: Time domain body acceleration with gravity acceleration removed, mean in z-axis.
+		timebodyaccelerometerstandarddeviationx: Time domain body acceleration with gravity acceleration removed, standard deviation in x-axis.
+		timebodyaccelerometerstandarddeviationy: Time domain body acceleration with gravity acceleration removed, standard deviation in y-axis.
+		timebodyaccelerometerstandarddeviationz: Time domain body acceleration with gravity acceleration removed, standard deviation in z-axis.
+		timegravityaccelerometermeanx: Time domain gravitational component of acceleration, mean in x-axis.
+		timegravityaccelerometermeany: Time domain gravitational component of acceleration, mean in y-axis.
+		timegravityaccelerometermeanz: Time domain gravitational component of acceleration, mean in z-axis.
+		timegravityaccelerometerstandarddeviationx: Time domain gravitational component of acceleration, standard deviation in x-axis.
+		timegravityaccelerometerstandarddeviationy: Time domain gravitational component of acceleration, standard deviation in y-axis.
+		timegravityaccelerometerstandarddeviationz: Time domain gravitational component of acceleration, standard deviation in z-axis.
+		timebodyaccelerometerjerkmeanx: Time domain linear jerk, or derivative of linear acceleration, mean in x-axis.
+		timebodyaccelerometerjerkmeany: Time domain linear jerk, or derivative of linear acceleration, mean in y-axis.
+		timebodyaccelerometerjerkmeanz: Time domain linear jerk, or derivative of linear acceleration, mean in z-axis.
+		timebodyaccelerometerjerkstandarddeviationx: Time domain linear jerk, or derivative of linear acceleration, standard deviation in x-axis.
+		timebodyaccelerometerjerkstandarddeviationy: Time domain linear jerk, or derivative of linear acceleration, standard deviation in y-axis.
+		timebodyaccelerometerjerkstandarddeviationz: Time domain linear jerk, or derivative of linear acceleration, standard deviation in z-axis.
+		timebodygyroscopemeanx: Time domain angular velocity, mean in x-axis.
+		timebodygyroscopemeany: Time domain angular velocity, mean in y-axis.
+		timebodygyroscopemeanz: Time domain angular velocity, mean in z-axis.
+		timebodygyroscopestandarddeviationx: Time domain angular velocity, standard deviation in x-axis.
+		timebodygyroscopestandarddeviationy: Time domain angular velocity, standard deviation in y-axis.
+		timebodygyroscopestandarddeviationz: Time domain angular velocity, standard deviation in z-axis.
+		timebodygyroscopejerkmeanx: Time domain angular jerk, or derivative of angular velocity, mean in x-axis.
+		timebodygyroscopejerkmeany: Time domain angular jerk, or derivative of angular velocity, mean in y-axis.
+		timebodygyroscopejerkmeanz: Time domain angular jerk, or derivative of angular velocity, mean in z-axis.
+		timebodygyroscopejerkstandarddeviationx: Time domain angular jerk, or derivative of angular velocity, standard deviation in x-axis.
+		timebodygyroscopejerkstandarddeviationy: Time domain angular jerk, or derivative of angular velocity, standard deviation in y-axis.
+		timebodygyroscopejerkstandarddeviationz: Time domain angular jerk, or derivative of angular velocity, standard deviation in z-axis.
+		timebodyaccelerometermagnitudemean: Time domain magnitude in all 3 dimensions by Euclidean norm for body acceleration with gravity acceleration removed, mean.
+		timebodyaccelerometermagnitudestandarddeviation: Time domain magnitude in all 3 dimensions by Euclidean norm for body acceleration with gravity acceleration removed, standard deviation.
+		timegravityaccelerometermagnitudemean: Time domain magnitude in all 3 dimensions by Euclidean norm for gravity acceleration, mean.
+		timegravityaccelerometermagnitudestandarddeviation: Time domain magnitude in all 3 dimensions by Euclidean norm for gravity acceleration, standard deviation.
+		timebodyaccelerometerjerkmagnitudemean: Time domain magnitude in all 3 dimensions by Euclidean norm for linear jerk, or derivative of linear acceleration, mean.
+		timebodyaccelerometerjerkmagnitudestandarddeviation: Time domain magnitude in all 3 dimensions by Euclidean norm for linear jerk, or derivative of linear acceleration, standard deviation.
+		timebodygyroscopemagnitudemean: Time domain magnitude in all 3 dimensions by Euclidean norm for angular velocity, mean.
+		timebodygyroscopemagnitudestandarddeviation: Time domain magnitude in all 3 dimensions by Euclidean norm for angular velocity, standard deviation.
+		timebodygyroscopejerkmagnitudemean:  Time domain magnitude in all 3 dimensions by Euclidean norm for derivative of angular velocity, mean.
+		timebodygyroscopejerkmagnitudestandarddeviation:  Time domain magnitude in all 3 dimensions by Euclidean norm for derivative of angular velocity, standarddeviation.
+		frequencybodyaccelerometermeanx: Frequency-domain transformed by FFT, body acceleration with gravity acceleration removed, mean in x-axis.
+		frequencybodyaccelerometermeany: Frequency-domain transformed by FFT, body acceleration with gravity acceleration removed, mean in y-axis.
+		frequencybodyaccelerometermeanz: Frequency-domain transformed by FFT, body acceleration with gravity acceleration removed, mean in z-axis.
+		frequencybodyaccelerometerstandarddeviationx: Frequency-domain transformed by FFT, body acceleration with gravity acceleration removed, standard deviation in x-axis.
+		frequencybodyaccelerometerstandarddeviationy: Frequency-domain transformed by FFT, body acceleration with gravity acceleration removed, standard deviation in y-axis.
+		frequencybodyaccelerometerstandarddeviationz: Frequency-domain transformed by FFT, body acceleration with gravity acceleration removed, standard deviation in z-axis.
+		frequencybodyaccelerometermeanfrequencyx: Frequency-domain transformed by FFT, body acceleration with gravity acceleration removed, mean frequency in x-axis.
+		frequencybodyaccelerometermeanfrequencyy: Frequency-domain transformed by FFT, body acceleration with gravity acceleration removed, mean frequency in y-axis.
+		frequencybodyaccelerometermeanfrequencyz: Frequency-domain transformed by FFT, body acceleration with gravity acceleration removed, mean frequency in z-axis.
+		frequencybodyaccelerometerjerkmeanx: Frequency-domain transformed by FFT, linear jerk or derivative of linear acceleration, mean in x-axis. 
+		frequencybodyaccelerometerjerkmeany: Frequency-domain transformed by FFT, linear jerk or derivative of linear acceleration, mean in y-axis. 
+		frequencybodyaccelerometerjerkmeanz: Frequency-domain transformed by FFT, linear jerk or derivative of linear acceleration, mean in z-axis. 
+		frequencybodyaccelerometerjerkstandarddeviationx: Frequency-domain transformed by FFT, linear jerk or derivative of linear acceleration, standard deviation in x-axis.
+		frequencybodyaccelerometerjerkstandarddeviationy: Frequency-domain transformed by FFT, linear jerk or derivative of linear acceleration, standard deviation in y-axis
+		frequencybodyaccelerometerjerkstandarddeviationz: Frequency-domain transformed by FFT, linear jerk or derivative of linear acceleration, standard deviation in z-axis
+		frequencybodyaccelerometerjerkmeanfrequencyx: Frequency-domain transformed by FFT, linear jerk or derivative of linear acceleration, mean frequency in x-axis.
+		frequencybodyaccelerometerjerkmeanfrequencyy: Frequency-domain transformed by FFT, linear jerk or derivative of linear acceleration, mean frequency in y-axis.
+		frequencybodyaccelerometerjerkmeanfrequencyz: Frequency-domain transformed by FFT, linear jerk or derivative of linear acceleration, mean frequency in z-axis.
+		frequencybodygyroscopemeanx: Frequency-domain transformed by FFT, angular velocity, mean in x-axis.
+		frequencybodygyroscopemeany: Frequency-domain transformed by FFT, angular velocity, mean in y-axis.
+		frequencybodygyroscopemeanz: Frequency-domain transformed by FFT, angular velocity, mean in z-axis.
+		frequencybodygyroscopestandarddeviationx: Frequency-domain transformed by FFT, angular velocity, standard deviation in x-axis.
+		frequencybodygyroscopestandarddeviationy: Frequency-domain transformed by FFT, angular velocity, standard deviation in y-axis.
+		frequencybodygyroscopestandarddeviationz: Frequency-domain transformed by FFT, angular velocity, standard deviation in z-axis.
+		frequencybodygyroscopemeanfrequencyx: Frequency-domain transformed by FFT, angular velocity, mean frequency in x-axis.
+		frequencybodygyroscopemeanfrequencyy: Frequency-domain transformed by FFT, angular velocity, mean frequency in y-axis.
+		frequencybodygyroscopemeanfrequencyz: Frequency-domain transformed by FFT, angular velocity, mean frequency in z-axis.
+		frequencybodyaccelerometermagnitudemean: Frequency-domain transformed by FFT, magnitude in all 3 dimensions by Euclidean norm for body acceleration with gravity acceleration removed, mean.
+		frequencybodyaccelerometermagnitudestandarddeviation: Frequency-domain transformed by FFT, magnitude in all 3 dimensions by Euclidean norm for body acceleration with gravity acceleration removed, standard deviation.
+		frequencybodyaccelerometermagnitudemeanfrequency: Frequency-domain transformed by FFT, magnitude in all 3 dimensions by Euclidean norm for body acceleration with gravity acceleration removed, mean frequency.
+		frequencybodybodyaccelerometerjerkmagnitudemean: Frequency-domain transformed by FFT, magnitude in all 3 dimensions by Euclidean norm for linear jerk, or derivative of linear acceleration, mean.
+		frequencybodybodyaccelerometerjerkmagnitudestandarddeviation: Frequency-domain transformed by FFT, magnitude in all 3 dimensions by Euclidean norm for linear jerk, or derivative of linear acceleration, standard deviation.
+		frequencybodybodyaccelerometerjerkmagnitudemeanfrequency: Frequency-domain transformed by FFT, magnitude in all 3 dimensions by Euclidean norm for linear jerk, or derivative of linear acceleration, mean frequency.
+		frequencybodybodygyroscopemagnitudemean: Frequency-domain transformed by FFT, magnitude in all 3 dimensions by Euclidean norm for angular velocity, mean.
+		frequencybodybodygyroscopemagnitudestandarddeviation: Frequency-domain transformed by FFT, magnitude in all 3 dimensions by Euclidean norm for angular velocity, standard deviation.
+		frequencybodybodygyroscopemagnitudemeanfrequency: Frequency-domain transformed by FFT, magnitude in all 3 dimensions by Euclidean norm for angular velocity, mean frequency.
+		frequencybodybodygyroscopejerkmagnitudemean: Frequency-domain transformed by FFT, magnitude in all 3 dimensions by Euclidean norm for derivative of angular velocity, mean.
+		frequencybodybodygyroscopejerkmagnitudestandarddeviation: Frequency-domain transformed by FFT, magnitude in all 3 dimensions by Euclidean norm for derivative of angular velocity, standarddeviation.
+		frequencybodybodygyroscopejerkmagnitudemeanfrequency: Frequency-domain transformed by FFT, magnitude in all 3 dimensions by Euclidean norm for derivative of angular velocity, mean frequency.
+
+
+average
+	
+	The average numerical value for the measurement or derived quantity described in variable, normalized to a range from -1 to 1.
+
+	numerical, reported to 7 decimal places, ranging from -1 to 1.
+
+
+
+
+
+
